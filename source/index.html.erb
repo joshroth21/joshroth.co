@@ -1,0 +1,101 @@
+---
+title: Josh Roth
+layout: bootstrap
+---
+<div class="hero-unit" id="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<h1>Josh Roth</h1>
+				<h2>Designer, Developer, Animator</h2>
+			</div>
+			<div class="col-lg-6">
+				<a class="social" href="mailto:josh@joshmroth.com"><i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;Email Me</a>
+				<a class="social" href="#" target="_blank"><i class="fa fa-file-text fa-lg"></i>&nbsp;&nbsp;My Resume</a>
+				<a class="social" href="http://twitter.com/joshroth" target="_blank"><i class="fa fa-twitter fa-lg"></i>&nbsp;&nbsp;Follow Me</a>
+				<a class="social" href="http://adventuresinanimation.tumblr.com/" target="_blank"><i class="fa fa-tumblr fa-lg"></i>&nbsp;&nbsp;My Blog</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 well" id="aboutme">
+			<a class="pull-right" href="#"><i class="fa fa-times-circle"></i></a>
+			<p><em>Hello, world!</em></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, autem, laborum, cum, est commodi nulla accusamus asperiores voluptatum laboriosam quos odio rerum voluptates! Velit deleniti culpa quis iusto libero dolores.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<h2>Portfolio</h2>
+			<div class="media">
+				<a class="pull-left" href="#">
+					<%= image_tag 'AdventuresinAnimation2.png', :width => 300 %>
+				</a>
+				<div class="media-body">
+					<h3>Adventures in Animation</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum est non nunc tristique ornare. Mauris sed ligula ornare, laoreet magna non, varius massa. Aliquam erat volutpat. Mauris rutrum sed felis at venenatis. Ut sit amet sem sed neque gravida dapibus. Ut hendrerit ipsum quis odio iaculis gravida. Cras nibh enim, iaculis in felis et, suscipit posuere mi.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6">
+			<h2>Experience</h2>
+			<ul class="list-unstyled" id="experience">
+				<li>Web Designer &amp; Developer<br/>
+					<strong>Clean Energy Experts</strong><br/>
+					<em>November 2011 - Present</em>
+					<p>Designing and building landing pages and emails for solar panel installation.</p>
+				</li>
+				<li>Graphic Design Assistant<br/>
+					<strong>ArtsEmerson</strong><br/>
+					<em>January 2011- August 2011</em>
+					<p>Designed posters and hand-outs for print. Edited marketing videos for the web.</p>
+				</li>
+				<li>Intern<br/>
+					<strong>Zoic Studios</strong><br/>
+					<em>Fall 2010</em><br/>
+					<p>Assisted with various production duties. Performed runs to other studios and production houses.</p>
+				</li>
+				<li>Assistant Web Coordinator<br/>
+					<strong>Emerson College Alumni Relations</strong><br/>
+					<em>November 2007-May 2010</em>
+					<p>Designed and coded emails for events. Maintained college’s online presence (Twitter, Facebook, etc.)</p>
+				</li>
+			</ul>
+		</div>
+		<div class="col-lg-6">
+			<h2>Education</h2>
+			<ul class="list-unstyled" id="education">
+				<li><strong>Animation Mentor</strong>, Emeryville, CA<br/>
+					Character Animation Program, September 2011 - March 2013
+				</li>
+				<li><strong>Emerson College</strong>, Boston, MA<br/>
+					BA, Visual Media Arts, 2011
+				</li>
+				<li><strong>Roslyn High School</strong>, Roslyn Heights, NY<br/>
+					High School Diploma, 2007</li>
+			</ul>
+			<h2>Skills</h2>
+			<ul class="fa-ul" id="skills">
+				<li><i class="fa-li fa fa-html5"></i> HTML, CSS</li>
+				<li><i class="fa-li fa fa-code"></i> PHP, MySQL, Javascript, Ruby</li>
+				<li><i class="fa-li fa fa-code"></i> Responsive design, static site development</li>
+				<li><i class="fa-li fa fa-github"></i> Git</li>
+				<li><i class="fa-li fa fa-desktop"></i> Photoshop, Illustrator, InDesign, Flash, Maya</li>
+				<li><i class="fa-li fa fa-video-camera"></i> After Effects, Premiere, Final Cut Pro, Avid</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="hero-unit" id="footer">
+	<div class="container">
+		&copy; Copyright <%= Time.now.year %>&nbsp;&nbsp;&nbsp;
+		<i class="fa fa-rocket"></i>&nbsp;&nbsp;&nbsp;
+		Josh Roth&nbsp;&nbsp;&bullet;&nbsp;&nbsp;<%= link_to 'Built on Bootstrap', 'http://getbootstrap.com/', :target => '_blank' %>
+	</div>
+</div>
