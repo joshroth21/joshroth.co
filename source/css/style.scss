@@ -26,7 +26,7 @@ body {
 	transition: color 0.25s ease-in-out;
 }
 
-h1 {
+#header h1 {
 	color: #FFFFFF;
 	font-family: "Roboto Slab", Helvetica, sans-serif;
 	font-weight: 700;
@@ -34,6 +34,18 @@ h1 {
 	margin: 0;
 	padding: 0;
 	text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+#header h1 a, #header h1 a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#header h1 a:hover {
+	color: #94808d;
+	-webkit-transition: color 0.25s ease-in-out;
+	-moz-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
 }
 
 #header h2 {
@@ -45,6 +57,13 @@ h1 {
 	margin: 0;
 	padding: 10px 0 0 0;
 }
+
+#header-nav li {
+	float: left;
+	margin-right: 5px;
+}
+
+#header-nav li:last-child { margin-right: 0; }
 
 .close {
 	color: #1F1A1D;
@@ -91,20 +110,21 @@ h3 a, h3 a:visited {
 }
 
 h3 a:hover {
-	color: #94808d;
+	color: #428bca;
 	text-decoration: none;
 	-webkit-transition: color 0.25s ease-in-out;
 	-moz-transition: color 0.25s ease-in-out;
 	transition: color 0.25s ease-in-out;
 }
 
-h3 span {
+h2 span, h3 span {
 	color: #CCC;
 	font-style: italic;
+	font-weight: 400;
 }
 
 .thumb:hover {
-	box-shadow: 0 0 5px #1F1A1D;
+	box-shadow: 0 0 5px #428bca;
 	-webkit-transition: box-shadow 0.25s ease-in-out;
 	-moz-transition: box-shadow 0.25s ease-in-out;
 	transition: box-shadow 0.25s ease-in-out;	
@@ -131,6 +151,10 @@ h3 span {
 	transition: color 0.25s ease-in-out;
 }
 
+#view-tablet, #view-mobile {
+	display: none;
+}
+
 @media (min-width: 970px) {
 	.container {
 		max-width: 960px;
@@ -141,12 +165,17 @@ h3 span {
 }
 
 @media (max-width: 768px) {
+	#header-nav li {
+		width: 100%;
+		clear: both;
+	}
 	.thumb {
 		margin-bottom: 10px;
 	}
-	h3 span {
+	h3 span, #footer span {
 		clear: both;
 		display: block;
 		width: 100%;
 	}
+	h2:first-child { margin-top: 25px; }	
 }

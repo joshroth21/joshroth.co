@@ -1,0 +1,71 @@
+---
+title: Josh Roth - Solar Energy Installers (Landing Page)
+layout: bootstrap
+---
+
+<%= partial 'header' %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<ol class="breadcrumb">
+				<li><a href="/">Portfolio</a></li>
+				<li class="active">Solar Energy Installers (Landing Page)</li>
+			</ol>
+			
+			<h2>Solar Energy Installers <span>Landing Page</span></h2>
+				
+			<p>A landing page for information on home solar installation. Built with a responsive design using the <%= link_to 'Bootstrap', 'http://www.getbootstrap.com', :target => '_blank' %> framework, generated as a static site with the <%= link_to 'Middleman', 'http://www.middlemanapp.com/', :target => '_blank' %> framework, and deployed to the cloud with Amazon S3 & Cloudfront.</p>
+
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$("#button-desktop").click(function() {
+						$('.active').removeClass('active');
+						$(this).addClass('active');
+						$("#view-desktop").show();
+						$("#view-tablet").hide();
+						$("#view-mobile").hide();
+					});
+					$("#button-tablet").click(function() {
+						$('.active').removeClass('active');
+						$(this).addClass('active');
+						$("#view-desktop").hide();
+						$("#view-tablet").show();
+						$("#view-mobile").hide();
+					});
+					$("#button-mobile").click(function() {
+						$('.active').removeClass('active');
+						$(this).addClass('active');
+						$("#view-desktop").hide();
+						$("#view-tablet").hide();
+						$("#view-mobile").show();
+					});					
+				});
+			</script>
+
+			<div class="btn-group btn-group-justified">
+				<div class="btn-group">
+					<button type="button" class="active btn btn-default" id="button-desktop"><i class="fa fa-desktop"> </i> Desktop View</button>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default" id="button-tablet"><i class="fa fa-tablet"> </i> Tablet View</button>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default" id="button-mobile"><i class="fa fa-mobile"> </i> Mobile View</button>
+				</div>
+			</div>
+			<p></p>
+			<div class="thumbnail" id="view-desktop">
+				<%= image_tag 'sei-desktop-fullpage.jpg', :width => 930, :class => 'img-responsive', :alt => 'Solar Energy Installers - Desktop View' %>
+			</div>
+			<div class="thumbnail" id="view-tablet">
+				<%= image_tag 'sei-tablet-fullpage.jpg', :class => 'img-responsive', :alt => 'Solar Energy Installers - Tablet View' %>
+			</div>
+			<div class="thumbnail" id="view-mobile">
+				<%= image_tag 'sei-mobile-fullpage.jpg', :class => 'img-responsive', :alt => 'Solar Energy Installers - Mobile View' %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= partial 'footer' %>

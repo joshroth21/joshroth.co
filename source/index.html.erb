@@ -2,43 +2,29 @@
 title: Josh Roth
 layout: bootstrap
 ---
-<div class="hero-unit" id="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<h1>Josh Roth</h1>
-				<h2>Designer, Developer, Animator</h2>
-			</div>
-			<div class="col-lg-6">
-				<a class="social" href="mailto:josh@joshmroth.com"><i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;Email Me</a>
-				<a class="social" href="#" target="_blank"><i class="fa fa-file-text fa-lg"></i>&nbsp;&nbsp;My Resume</a>
-				<a class="social" href="http://twitter.com/joshroth" target="_blank"><i class="fa fa-twitter fa-lg"></i>&nbsp;&nbsp;Follow Me</a>
-				<a class="social" href="http://adventuresinanimation.tumblr.com/" target="_blank"><i class="fa fa-tumblr fa-lg"></i>&nbsp;&nbsp;My Blog</a>
-			</div>
-		</div>
-	</div>
-</div>
+
+<%= partial 'header' %>
 
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12 well" id="aboutme">
 			<a class="pull-right close" href="#"><i class="fa fa-times-circle"></i></a>
-			<em>Hello, world!</em> I&rsquo;m Josh, a web designer/developer &amp; animator living in North Hollywood, CA. Here you&rsquo;ll find my latest work and <%= link_to 'my resume', '%' %>. Please take a look around, and feel free to <%= link_to 'say hello', 'mailto:josh@joshmroth.com' %>. Thanks for stopping by!
+			<em>Hello, world!</em> I&rsquo;m Josh, a web designer/developer &amp; animator living in North Hollywood, CA. Here you&rsquo;ll find my latest work and <%= link_to 'my resume', 'Josh_Roth_Resume_2014.pdf', :target => '_blank' %>. Please take a look around, and feel free to <%= link_to 'say hello', 'mailto:josh@joshmroth.com' %>. Thanks for stopping by!
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-lg-12">
-			<h2>Portfolio
+			<h2>Portfolio <span id="filter-replace"> </span>
 				<div class="pull-right btn-group">
-				  <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
-				    <i class="fa fa-filter"></i>&nbsp;&nbsp;Filter
-				  </button>
-				  <ul class="dropdown-menu" role="menu">
-				    <li><%= link_to 'Animation', '#animation' %></li>
-				    <li><%= link_to 'Graphic Design', '#graphicdesign' %></li>
-				    <li><%= link_to 'Print Design', '#printdesign' %></li>
-				    <li><%= link_to 'Web Design', '#webdesign' %></li>
-				  </ul>
+					<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-filter"></i>&nbsp;&nbsp;Filter
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><%= link_to 'All', '#all', :class => 'filter' %></li>
+						<li><%= link_to 'Animation', '#animation', :class => 'filter' %></li>
+						<li><%= link_to 'Graphic Design', '#graphicdesign', :class => 'filter' %></li>
+						<li><%= link_to 'Web Design', '#webdesign', :class => 'filter' %></li>
+					</ul>
 				</div>
 			</h2>
 		</div>
@@ -46,62 +32,73 @@ layout: bootstrap
 	<div class="containter portfolio">
 		<div class="row portfolio-webdesign">
 			<div class="col-lg-4">
-				<% link_to '#', :class => 'pull-left', :target => '_blank' do %>
+				<% link_to 'portfolio/solar-energy-installers/' do %>
 					<%= image_tag 'portfolio-sei.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
 			<div class="col-lg-8">
-				<h3><%= link_to 'Solar Energy Installers', '#', :target => '_blank' %> <span>Landing Page</span></h3>
-				<p>Responsive design</p>
+				<h3><%= link_to 'Solar Energy Installers', 'portfolio/solar-energy-installers/' %> <span>Landing Page</span></h3>
+				<p>A landing page for information on home solar installation. Built with a responsive design using the <%= link_to 'Bootstrap', 'http://www.getbootstrap.com', :target => '_blank' %> framework, generated as a static site with the <%= link_to 'Middleman', 'http://www.middlemanapp.com/', :target => '_blank' %> framework, and deployed to the cloud with Amazon S3 & Cloudfront.</p>
 			</div>
 		</div>
 		<div class="row portfolio-webdesign">
 			<div class="col-lg-4">
-				<% link_to '#', :class => 'pull-left', :target => '_blank' do %>
+				<% link_to 'portfolio/solar-america-widgets/' do %>
 					<%= image_tag 'portfolio-samwidgets.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
 			<div class="col-lg-8">
-				<h3><%= link_to 'Solar America', '#', :target => '_blank' %> <span>Widget Suite</span></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, libero, voluptatem impedit maiores corrupti nisi incidunt nesciunt explicabo fuga nemo magnam voluptates laudantium voluptatibus ipsum porro veritatis perspiciatis reiciendis? Repudiandae!</p>
+				<h3><%= link_to 'Solar America', 'portfolio/solar-america-widgets/' %> <span>Widget Suite</span></h3>
+				<p>A suite of dynamic iframe widgets for home solar installation used by a wide range of different websites. Each widget is designed to be customizable and themeable to fit into any website&rsquo;s style. Generated as static pages with the <%= link_to 'Middleman', 'http://www.middlemanapp.com/', :target => '_blank' %> framework and deployed to the cloud with Amazon S3 & Cloudfront.</p></p>
 			</div>
 		</div>		
 		<div class="row portfolio-webdesign">
 			<div class="col-lg-4">
-				<% link_to 'http://joshmroth.com/freelance/chloe/', :class => 'pull-left', :target => '_blank' do %>
+				<% link_to 'http://joshmroth.com/freelance/chloe/', :target => '_blank' do %>
 					<%= image_tag 'portfolio-chloe.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
 			<div class="col-lg-8">
 				<h3><%= link_to 'Chloe Medaghlchi', 'http://joshmroth.com/freelance/chloe/', :target => '_blank' %> <span>Web Portfolio</span></h3>
-				<p>Chloe is a friend of mine and a very talented art director. I designed this portfolio for her in Wordpress, so that she could easily update it without any need to code.</p>
+				<p>Chloe is a friend of mine who is an art director. I designed this portfolio for her in Wordpress, so that she could easily update it without any need to code.</p>
 			</div>
 		</div>
 		<div class="row portfolio-graphicdesign">
 			<div class="col-lg-4">
-				<% link_to 'http://adventuresinanimation.tumblr.com/', :class => 'pull-left', :target => '_blank' do %>
+				<% link_to 'http://adventuresinanimation.tumblr.com/', :target => '_blank' do %>
 					<%= image_tag 'portfolio-adventuresinanimation.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
 			<div class="col-lg-8">
 				<h3><%= link_to 'Adventures in Animation', 'http://adventuresinanimation.tumblr.com/', :target => '_blank' %> <span>Logo Design</span></h3>
-				<p>After graduating Animation Mentor I started this blog about animation.</p>
+				<p>After graduating Animation Mentor I started this blog about animation. I had a lot of fun designing this logo. I wanted to capture a sense of adventure and fantasy.</p>
 			</div>
 		</div>
 		<div class="row portfolio-animation">
 			<div class="col-lg-4">
-				<% link_to 'https://vimeo.com/72059455', :class => 'pull-left', :target => '_blank' do %>
+				<% link_to 'https://vimeo.com/72059455', :target => '_blank' do %>
 					<%= image_tag 'portfolio-demoreel.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
 			<div class="col-lg-8">
 				<h3><%= link_to 'Demo Reel 2014', 'https://vimeo.com/72059455', :target => '_blank' %> <span>Character Animation</span></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, distinctio, possimus officiis vero repellendus tempora quidem facilis soluta rem vitae perspiciatis tenetur dolorem illum itaque non accusantium architecto nulla earum.</p> 
+				<p>My latest character animation demo reel, featuring work from my final classes at Animation Mentor. All animation was done in Maya 2011-2013. Rigs were provided by Animation Mentor.</p>
+			</div>
+		</div>
+		<div class="row portfolio-webdesign">
+			<div class="col-lg-4">
+				<% link_to 'http://joycmitchell.com/', :target => '_blank' do %>
+					<%= image_tag 'portfolio-joy.jpg', :class => 'thumb' %>
+				<% end %>
+			</div>
+			<div class="col-lg-8">
+				<h3><%= link_to 'Joy C. Mitchell', 'http://joycmitchell.com/', :target => '_blank' %> <span>Web Portfolio</span></h3>
+				<p>Joy is a friend of mine who is a copy writer and editor. I designed this portfolio for her in Wordpress, so that she could easily update it without any need to code.</p>
 			</div>
 		</div>		
 		<div class="row portfolio-animation">
 			<div class="col-lg-4">
-				<% link_to 'http://www.youtube.com/watch?feature=player_detailpage&v=bJErQ9Shw2o', :class => 'pull-left', :target => '_blank' do %>
+				<% link_to 'http://www.youtube.com/watch?feature=player_detailpage&v=bJErQ9Shw2o', :target => '_blank' do %>
 					<%= image_tag 'portfolio-hubspot.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
@@ -163,13 +160,6 @@ layout: bootstrap
 	</div>
 </div>
 
-<div class="hero-unit" id="footer">
-	<div class="container">
-		&copy; Copyright <%= Time.now.year %>&nbsp;&nbsp;&nbsp;
-		<i class="fa fa-rocket"></i>&nbsp;&nbsp;&nbsp;
-		Josh Roth&nbsp;&nbsp;&bullet;&nbsp;&nbsp;<%= link_to 'Made with Bootstrap', 'http://getbootstrap.com/', :target => '_blank' %>
-	</div>
-</div>
-
+<%= partial 'footer' %>
 <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' %>
 <%= javascript_include_tag 'home' %>

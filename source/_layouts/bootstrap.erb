@@ -13,12 +13,11 @@
       <%= javascript_include_tag 'js/html5shiv' %>
       <%= javascript_include_tag 'js/respond.min' %>
     <![endif]-->
+    <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' %>
+    <%= javascript_include_tag 'js/bootstrap.min' %>    
     <%= partial 'google_analytics' %>
   </head>
   <body>
     <%= yield %>
-
-    <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' %>
-    <%= javascript_include_tag 'js/bootstrap.min' %>
   </body>
 </html>
