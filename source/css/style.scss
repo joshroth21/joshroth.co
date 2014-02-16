@@ -48,6 +48,7 @@ h1 {
 
 .close {
 	color: #1F1A1D;
+	margin-left: 5px;
 }
 
 h2 {
@@ -80,12 +81,33 @@ h2:first-child { margin-top: 0; }
 	font-size: 1.25em;
 }
 
-.media-body h3 {
+h3 {
 	margin: 0 0 10px 0;
 }
 
-.media-body h3 span {
-	color: #AAA;
+h3 a, h3 a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+h3 a:hover {
+	color: #94808d;
+	text-decoration: none;
+	-webkit-transition: color 0.25s ease-in-out;
+	-moz-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
+}
+
+h3 span {
+	color: #CCC;
+	font-style: italic;
+}
+
+.thumb:hover {
+	box-shadow: 0 0 5px #1F1A1D;
+	-webkit-transition: box-shadow 0.25s ease-in-out;
+	-moz-transition: box-shadow 0.25s ease-in-out;
+	transition: box-shadow 0.25s ease-in-out;	
 }
 
 #footer {
@@ -110,7 +132,21 @@ h2:first-child { margin-top: 0; }
 }
 
 @media (min-width: 970px) {
-  .container {
-    max-width: 960px;
-  }
+	.container {
+		max-width: 960px;
+	}
+	.portfolio .row {
+		margin-bottom: 30px;
+	}  
+}
+
+@media (max-width: 768px) {
+	.thumb {
+		margin-bottom: 10px;
+	}
+	h3 span {
+		clear: both;
+		display: block;
+		width: 100%;
+	}
 }
