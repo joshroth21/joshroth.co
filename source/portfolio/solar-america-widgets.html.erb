@@ -8,7 +8,7 @@ layout: bootstrap
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<ol class="breadcrumb">
+			<ol class="breadcrumb hidden-xs">
 				<li><a href="/">Portfolio</a></li>
 				<li class="active">Solar America (Widget Suite)</li>
 			</ol>
@@ -41,3 +41,5 @@ layout: bootstrap
 </div>
 
 <%= partial 'footer' %>
+<%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' %>
+<%= javascript_include_tag 'all' %>

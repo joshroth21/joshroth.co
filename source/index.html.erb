@@ -14,18 +14,19 @@ layout: bootstrap
 	</div>
 	<div class="row">
 		<div class="col-lg-12">
+			<a name="portfolio"></a>
+			<div class="pull-right btn-group">
+				<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-filter"></i>&nbsp;&nbsp;Filter
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><%= link_to 'All', '#all', :class => 'filter' %></li>
+					<li><%= link_to 'Animation', '#animation', :class => 'filter' %></li>
+					<li><%= link_to 'Graphic Design', '#graphicdesign', :class => 'filter' %></li>
+					<li><%= link_to 'Web Design', '#webdesign', :class => 'filter' %></li>
+				</ul>
+			</div>
 			<h2>Portfolio <span id="filter-replace"> </span>
-				<div class="pull-right btn-group">
-					<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
-						<i class="fa fa-filter"></i>&nbsp;&nbsp;Filter
-					</button>
-					<ul class="dropdown-menu" role="menu">
-						<li><%= link_to 'All', '#all', :class => 'filter' %></li>
-						<li><%= link_to 'Animation', '#animation', :class => 'filter' %></li>
-						<li><%= link_to 'Graphic Design', '#graphicdesign', :class => 'filter' %></li>
-						<li><%= link_to 'Web Design', '#webdesign', :class => 'filter' %></li>
-					</ul>
-				</div>
 			</h2>
 		</div>
 	</div>
@@ -49,7 +50,7 @@ layout: bootstrap
 			</div>
 			<div class="col-lg-8">
 				<h3><%= link_to 'Solar America', 'portfolio/solar-america-widgets/' %> <span>Widget Suite</span></h3>
-				<p>A suite of dynamic iframe widgets for home solar installation used by a wide range of different websites. Each widget is designed to be customizable and themeable to fit into any website&rsquo;s style. Generated as static pages with the <%= link_to 'Middleman', 'http://www.middlemanapp.com/', :target => '_blank' %> framework and deployed to the cloud with Amazon S3 & Cloudfront.</p></p>
+				<p>A suite of dynamic iframe widgets for home solar installation used by a wide range of different websites. Each widget is designed to be customizable and theme-able to fit into any website&rsquo;s style. Generated as static pages with the <%= link_to 'Middleman', 'http://www.middlemanapp.com/', :target => '_blank' %> framework and deployed to the cloud with Amazon S3 & Cloudfront.</p></p>
 			</div>
 		</div>		
 		<div class="row portfolio-webdesign">
@@ -111,6 +112,7 @@ layout: bootstrap
 	</div>
 	<div class="row" id="below">
 		<div class="col-lg-6">
+			<a name="experience"></a>
 			<h2>Experience</h2>
 			<ul class="list-unstyled" id="experience">
 				<li>Web Designer &amp; Developer<br/>
@@ -136,6 +138,7 @@ layout: bootstrap
 			</ul>
 		</div>
 		<div class="col-lg-6">
+			<a name="education"></a>
 			<h2>Education</h2>
 			<ul class="list-unstyled" id="education">
 				<li><strong>Animation Mentor</strong>, Emeryville, CA<br/>
@@ -147,15 +150,28 @@ layout: bootstrap
 				<li><strong>Roslyn High School</strong>, Roslyn Heights, NY<br/>
 					High School Diploma, 2007</li>
 			</ul>
+			<a name="skills"></a>
 			<h2>Skills</h2>
 			<ul class="fa-ul" id="skills">
 				<li><i class="fa-li fa fa-html5"></i> HTML, CSS</li>
 				<li><i class="fa-li fa fa-code"></i> PHP, MySQL, Javascript, Ruby</li>
 				<li><i class="fa-li fa fa-code"></i> Responsive design, static site development</li>
 				<li><i class="fa-li fa fa-github"></i> Git</li>
+				<li><i class="fa-li fa fa-leaf"></i> Coda, Sublime Text, Transmit, Text Mate</li>
 				<li><i class="fa-li fa fa-desktop"></i> Photoshop, Illustrator, InDesign, Flash, Maya</li>
 				<li><i class="fa-li fa fa-video-camera"></i> After Effects, Premiere, Final Cut Pro, Avid</li>
 			</ul>
+		</div>
+	</div>
+	<div class="row visible-xs">
+		<div class="col-sm-12">
+			<h2>Thanks for visiting!</h2>
+			<a href="mailto:josh@joshmroth.com"><button type="button" class="btn btn-primary btn-lg btn-block">
+				<i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;Contact Me
+			</button></a>
+			<a href="/Josh_Roth_Resume_2014.pdf" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-block">
+				<i class="fa fa-file-text fa-lg"></i>&nbsp;&nbsp;Download My Resume
+			</button></a>
 		</div>
 	</div>
 </div>

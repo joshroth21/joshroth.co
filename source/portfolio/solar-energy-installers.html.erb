@@ -8,7 +8,7 @@ layout: bootstrap
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<ol class="breadcrumb">
+			<ol class="breadcrumb hidden-xs">
 				<li><a href="/">Portfolio</a></li>
 				<li class="active">Solar Energy Installers (Landing Page)</li>
 			</ol>
@@ -19,31 +19,11 @@ layout: bootstrap
 
 			<script type="text/javascript">
 				$(document).ready(function() {
-					$("#button-desktop").click(function() {
-						$('.active').removeClass('active');
-						$(this).addClass('active');
-						$("#view-desktop").show();
-						$("#view-tablet").hide();
-						$("#view-mobile").hide();
-					});
-					$("#button-tablet").click(function() {
-						$('.active').removeClass('active');
-						$(this).addClass('active');
-						$("#view-desktop").hide();
-						$("#view-tablet").show();
-						$("#view-mobile").hide();
-					});
-					$("#button-mobile").click(function() {
-						$('.active').removeClass('active');
-						$(this).addClass('active');
-						$("#view-desktop").hide();
-						$("#view-tablet").hide();
-						$("#view-mobile").show();
-					});					
+
 				});
 			</script>
 
-			<div class="btn-group btn-group-justified">
+			<div class="btn-group btn-group-justified hidden-xs">
 				<div class="btn-group">
 					<button type="button" class="active btn btn-default" id="button-desktop"><i class="fa fa-desktop"> </i> Desktop View</button>
 				</div>
@@ -54,6 +34,19 @@ layout: bootstrap
 					<button type="button" class="btn btn-default" id="button-mobile"><i class="fa fa-mobile"> </i> Mobile View</button>
 				</div>
 			</div>
+
+			<div class="row visible-xs mobile-buttons">
+				<div class="col-xs-12">
+					<button type="button" class="active btn btn-default" id="mobilebutton-desktop"><i class="fa fa-desktop"> </i> Desktop View</button>
+				</div>
+				<div class="col-xs-12">
+					<button type="button" class="btn btn-default" id="mobilebutton-tablet"><i class="fa fa-tablet"> </i> Tablet View</button>
+				</div>
+				<div class="col-xs-12">
+					<button type="button" class="btn btn-default" id="mobilebutton-mobile"><i class="fa fa-mobile"> </i> Mobile View</button>
+				</div>
+			</div>
+
 			<p></p>
 			<div class="thumbnail" id="view-desktop">
 				<%= image_tag 'sei-desktop-fullpage.jpg', :width => 930, :class => 'img-responsive', :alt => 'Solar Energy Installers - Desktop View' %>
@@ -69,3 +62,5 @@ layout: bootstrap
 </div>
 
 <%= partial 'footer' %>
+<%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' %>
+<%= javascript_include_tag 'all' %>

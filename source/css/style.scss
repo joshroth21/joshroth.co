@@ -60,7 +60,9 @@ body {
 
 #header-nav li {
 	float: left;
+	font-size: 1.25em;
 	margin-right: 5px;
+	text-align: right;
 }
 
 #header-nav li:last-child { margin-right: 0; }
@@ -165,6 +167,50 @@ h2 span, h3 span {
 }
 
 @media (max-width: 768px) {
+	.hero-unit {
+		margin: 0;
+		padding: 15px 0 10px 0;
+	}
+	#mobile-menu {
+		background: #94808d;
+		font-size: 1.25em;
+		font-weight: 700;
+		padding: 10px 0;
+		text-transform: uppercase;
+	}
+	#mobile-menu:active {
+		background: #000;
+		-webkit-transition: background 0.1s ease-in-out;
+		-moz-transition: background 0.1s ease-in-out;
+		transition: background 0.1s ease-in-out;		
+	}
+	#mobile-menu a, #mobile-menu a:visited {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	#mobile-menu a:hover {
+		text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+		-webkit-transition: text-shadow 0.25s ease-in-out;
+		-moz-transition: text-shadow 0.25s ease-in-out;
+		transition: text-shadow 0.25s ease-in-out;
+	}
+	#mobile-navigation {
+		background: #94808d;
+		display: none;
+		font-size: 1.25em;
+		font-weight: 700;
+		padding: 0 0 10px 0;
+	}
+	#mobile-navigation a {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	#mobile-navigation a:active {
+		color: #000;
+	} 
+	#mobile-navigation .col-sm-12 {
+		margin-bottom: 10px;
+	}
 	#header-nav li {
 		width: 100%;
 		clear: both;
@@ -172,10 +218,34 @@ h2 span, h3 span {
 	.thumb {
 		margin-bottom: 10px;
 	}
-	h3 span, #footer span {
+	.portfolio > .row {
+		border-bottom: 1px dotted #ccc;
+		margin-bottom: 10px;
+	}
+	#filter-replace, h2 span, h3 span, #footer span {
 		clear: both;
 		display: block;
 		width: 100%;
 	}
 	h2:first-child { margin-top: 25px; }	
+	a > .btn-block {
+		background: #94808d image-url('stardust.png');
+		margin-bottom: 5px;
+		text-decoration: none;
+		text-shadow: 0 2px 5px rgba(0,0,0,0.5);		
+	}
+	a > .btn-block:visited {
+		text-decoration: none !important;
+	}
+	a:hover > .btn-block:hover {
+		background: #1f1a1d;
+		text-decoration: none !important;
+	}
+	a > .btn-block:active {
+		background: #94808d;
+	}
+	.mobile-buttons .btn {
+		margin-bottom: 5px;
+		width: 100%;
+	}
 }

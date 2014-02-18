@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	$('#mobile-menu').click(function() {
+		$('#mobile-navigation').slideToggle('fast');
+	});
+
 	$('.close').click(function() {
 		$('#aboutme').fadeOut();
 	});
