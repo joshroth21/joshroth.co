@@ -7,15 +7,9 @@ layout: bootstrap
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-12 well" id="aboutme">
-			<a class="pull-right close" href="#"><i class="fa fa-times-circle"></i></a>
-			<em>Hello, world!</em> I&rsquo;m Josh, a web designer/developer &amp; animator living in North Hollywood, CA. Here you&rsquo;ll find my latest work and <%= link_to 'my resume', 'Josh_Roth_Resume_2014.pdf', :target => '_blank' %>. Please take a look around, and feel free to <%= link_to 'say hello', 'mailto:josh@joshmroth.com' %>. Thanks for stopping by!
-		</div>
-	</div>
-	<div class="row">
 		<div class="col-md-12">
 			<a name="portfolio"></a>
-			<h2>
+			<h2 id="portfolio">
 			<div class="pull-right btn-group">
 				<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
 					<i class="fa fa-filter"></i>&nbsp;&nbsp;Filter
@@ -32,6 +26,28 @@ layout: bootstrap
 		</div>
 	</div>
 	<div class="containter portfolio">
+		<div class="row portfolio-graphicdesign">
+			<div class="col-md-4">
+				<% link_to 'portfolio/first-light-theatre/' do %>
+					<%= image_tag 'portfolio-firstlight.jpg', :class => 'thumb' %>
+				<% end %>
+			</div>
+			<div class="col-md-8">
+				<h3><%= link_to 'First Light Theatre Project', 'portfolio/first-light-theatre/' %> <span>Logo Design</span></h3>
+				<p>A non-profit theatre group based out of North Hollywood, CA commissioned me to create a set of logos they could use in a variety of settings. <%= link_to 'View the whole set here.', 'portfolio/first-light-theatre/' %></p>
+			</div>
+		</div>
+		<div class="row portfolio-graphicdesign">
+			<div class="col-md-4">
+				<% link_to 'portfolio/red-wedding/' do %>
+					<%= image_tag 'portfolio-redwedding.jpg', :class => 'thumb' %>
+				<% end %>
+			</div>
+			<div class="col-md-8">
+				<h3><%= link_to 'Red Wedding Caterers', 'portfolio/red-wedding/' %> <span>T-Shirt Design</span></h3>
+				<p>A <em>Game of Thrones</em> themed t-shirt I designed for my dodgeball team. The season&rsquo;s theme was &ldquo;too soon&rdquo;. <%= link_to 'View the full image here.', 'portfolio/red-wedding/' %></p>
+			</div>
+		</div>
 		<div class="row portfolio-webdesign">
 			<div class="col-md-4">
 				<% link_to 'portfolio/solar-energy-installers/' do %>

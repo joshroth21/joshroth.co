@@ -1,0 +1,46 @@
+---
+title: First Light Theatre Project (Logo Design)
+layout: bootstrap
+---
+
+<%= partial 'header' %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<ol class="breadcrumb hidden-xs">
+				<li><a href="/">Portfolio</a></li>
+				<li class="active">First Light Theatre Project (Logo Design)</li>
+			</ol>
+			
+			<h2>First Light Theatre Project <span>Logo Design</span></h2>
+	
+			<div class="row">
+				<div class="col-xs-6 col-md-3">
+					<div class="thumbnail">
+						<%= image_tag 'firstlight1.png', :alt => 'First Light Logo on Dark Blue', :class => 'img-responsive' %>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="thumbnail">
+						<%= image_tag 'firstlight2.png', :alt => 'First Light Logo on White', :class => 'img-responsive' %>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="thumbnail">
+						<%= image_tag 'firstlight3.png', :alt => 'First Light Logo in Black/White', :class => 'img-responsive' %>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="thumbnail">
+						<%= image_tag 'firstlight4.png', :alt => 'First Light Logo in Black/White', :class => 'img-responsive' %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= partial 'footer' %>
+<%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' %>
+<%= javascript_include_tag 'all' %>
