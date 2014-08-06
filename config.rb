@@ -78,7 +78,7 @@ end
 # Deploy via FTP
 activate :deploy do |deploy|
   deploy.method   = :ftp
-  deploy.host     = "bugsy.dreamhost.com"
+  deploy.host     = "ftp.joshroth.co"
   deploy.path     = "/joshroth.co/"
   deploy.user     = "joshroth"
   deploy.password = "Gallifrey21"
