@@ -7,13 +7,13 @@ layout: bootstrap
 
 <div class="container">
 	<div class="row">
-		<div class="col-lg-12 well" id="aboutme">
+		<div class="col-md-12 well" id="aboutme">
 			<a class="pull-right close" href="#"><i class="fa fa-times-circle"></i></a>
 			<em>Hello, world!</em> I&rsquo;m Josh, a web designer/developer &amp; animator living in North Hollywood, CA. Here you&rsquo;ll find my latest work and <%= link_to 'my resume', 'Josh_Roth_Resume_2014.pdf', :target => '_blank' %>. Please take a look around, and feel free to <%= link_to 'say hello', 'mailto:josh@joshmroth.com' %>. Thanks for stopping by!
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-lg-12">
+		<div class="col-md-12">
 			<a name="portfolio"></a>
 			<h2>
 			<div class="pull-right btn-group">
@@ -33,78 +33,78 @@ layout: bootstrap
 	</div>
 	<div class="containter portfolio">
 		<div class="row portfolio-webdesign">
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<% link_to 'portfolio/solar-energy-installers/' do %>
 					<%= image_tag 'portfolio-sei.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-md-8">
 				<h3><%= link_to 'Solar Energy Installers', 'portfolio/solar-energy-installers/' %> <span>Landing Page</span></h3>
 				<p>A landing page for information on home solar installation. Built with a responsive design using the <%= link_to 'Bootstrap', 'http://www.getbootstrap.com', :target => '_blank' %> framework, generated as a static site with the <%= link_to 'Middleman', 'http://www.middlemanapp.com/', :target => '_blank' %> framework, and deployed to the cloud with Amazon S3 & Cloudfront.</p>
 			</div>
 		</div>
 		<div class="row portfolio-webdesign">
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<% link_to 'portfolio/solar-america-widgets/' do %>
 					<%= image_tag 'portfolio-samwidgets.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-md-8">
 				<h3><%= link_to 'Solar America', 'portfolio/solar-america-widgets/' %> <span>Widget Suite</span></h3>
 				<p>A suite of dynamic iframe widgets for home solar installation used by a wide range of different websites. Each widget is designed to be customizable and theme-able to fit into any website&rsquo;s style. Generated as static pages with the <%= link_to 'Middleman', 'http://www.middlemanapp.com/', :target => '_blank' %> framework and deployed to the cloud with Amazon S3 & Cloudfront.</p></p>
 			</div>
 		</div>		
 		<div class="row portfolio-webdesign">
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<% link_to 'http://www.chloemedghalchi.com/', :target => '_blank' do %>
 					<%= image_tag 'portfolio-chloe.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-md-8">
 				<h3><%= link_to 'Chloe Medaghlchi', 'http://www.chloemedghalchi.com/', :target => '_blank' %> <span>Web Portfolio</span></h3>
 				<p>Chloe is a friend of mine who is an art director. I designed this portfolio for her in Wordpress, so that she could easily update it without any need to code.</p>
 			</div>
 		</div>
 		<div class="row portfolio-graphicdesign">
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<% link_to 'http://adventuresinanimation.tumblr.com/', :target => '_blank' do %>
 					<%= image_tag 'portfolio-adventuresinanimation.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-md-8">
 				<h3><%= link_to 'Adventures in Animation', 'http://adventuresinanimation.tumblr.com/', :target => '_blank' %> <span>Logo Design</span></h3>
 				<p>After graduating Animation Mentor I started this blog about animation. I had a lot of fun designing this logo. I wanted to capture a sense of adventure and fantasy.</p>
 			</div>
 		</div>
 		<div class="row portfolio-animation">
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<% link_to 'https://vimeo.com/72059455', :target => '_blank' do %>
 					<%= image_tag 'portfolio-demoreel.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-md-8">
 				<h3><%= link_to 'Demo Reel 2014', 'https://vimeo.com/72059455', :target => '_blank' %> <span>Character Animation</span></h3>
 				<p>My latest character animation demo reel, featuring work from my final classes at Animation Mentor. All animation was done in Maya 2011-2013. Rigs were provided by Animation Mentor.</p>
 			</div>
 		</div>
 		<div class="row portfolio-webdesign">
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<% link_to 'http://joycmitchell.com/', :target => '_blank' do %>
 					<%= image_tag 'portfolio-joy.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-md-8">
 				<h3><%= link_to 'Joy C. Mitchell', 'http://joycmitchell.com/', :target => '_blank' %> <span>Web Portfolio</span></h3>
 				<p>Joy is a friend of mine who is a copy writer and editor. I designed this portfolio for her in Wordpress, so that she could easily update it without any need to code.</p>
 			</div>
 		</div>		
 		<div class="row portfolio-animation">
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<% link_to 'http://www.youtube.com/watch?feature=player_detailpage&v=bJErQ9Shw2o', :target => '_blank' do %>
 					<%= image_tag 'portfolio-hubspot.jpg', :class => 'thumb' %>
 				<% end %>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-md-8">
 				<h3><%= link_to 'Abandoned Cart Nurturing with Hubspot', 'http://www.youtube.com/watch?feature=player_detailpage&v=bJErQ9Shw2o', :target => '_blank' %><br/>
 				<span>Motion Graphics Animation</span></h3>
 				<p>Hubspot wanted an easy way to explain the rather complicated idea of abandoned cart nurturing, which is a part of their business model of inbound online marketing. I suggested a 90 second online animated spot. One they could send to potential clients and get them hooked on the idea.</p> 
@@ -112,7 +112,7 @@ layout: bootstrap
 		</div>
 	</div>
 	<div class="row" id="below">
-		<div class="col-lg-6">
+		<div class="col-md-6">
 			<a name="experience"></a>
 			<h2>Experience</h2>
 			<ul class="list-unstyled" id="experience">
@@ -138,7 +138,7 @@ layout: bootstrap
 				</li>
 			</ul>
 		</div>
-		<div class="col-lg-6">
+		<div class="col-md-6">
 			<a name="education"></a>
 			<h2>Education</h2>
 			<ul class="list-unstyled" id="education">
